@@ -28,7 +28,7 @@ public class Depot{
 	}
 
 	public void addRack(Rack rack){
-		if(count <= racks.length) racks[count++] = rack;
+		if(count < racks.length) racks[count++] = rack;
 		else System.out.println("No more space left! Increase the Depot's racks size.");	
 	}
 
